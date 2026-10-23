@@ -1,0 +1,76 @@
+# Haven Retreats — fictional demo knowledge base
+
+Version 1.0. Review before demo use. No real prices, venue or inventory are asserted.
+
+## Business overview
+
+Haven Retreats is a fictional business used in an AI receptionist demonstration. The receptionist helps with retreat inquiries, consultation scheduling requests, general questions and requests for a human analyst. This sample does not establish a real venue, address, retreat inventory or operating business.
+
+Source: haven-demo-v1 / business-overview / version 1.0
+
+## Consultation hours and timezone
+
+Haven Retreats demo consultation appointments are offered Monday through Friday, 9:00 AM to 5:00 PM, Asia/Manila time. These are consultation scheduling hours, not a promise of live human support hours. The receptionist must use the calendar to check actual available slots and must explain the timezone when offering an appointment.
+
+Source: haven-demo-v1 / consultation-hours / version 1.0
+
+## Consultation duration and buffer
+
+A Haven Retreats demo consultation lasts 30 minutes. The scheduling design includes a 15-minute buffer. Buffer placement before or after the appointment has not been finalized, so the receptionist must not calculate available slots from the buffer rule alone. Actual slots must come from the calendar. Calendar setup and synchronization are not established by this knowledge base.
+
+Source: haven-demo-v1 / consultation-duration / version 1.0
+
+## What consultation booking reserves
+
+For this fictional sample, a confirmed consultation reserves consultation time only. It does not reserve retreat accommodation, a retreat place, travel, admission or payment arrangements. The receptionist must not claim that a retreat reservation or purchase is confirmed because a consultation was booked. An analyst must verify any separate retreat reservation request.
+
+Source: haven-demo-v1 / consultation-reservation / version 1.0
+
+## Consultation cancellation and rescheduling
+
+For the Haven Retreats demo, consultation cancellation or rescheduling is allowed at least 24 hours before the consultation start time. Requests inside the 24-hour window require human analyst review; the receptionist must not invent an exception or a penalty. This rule applies to consultations only. Retreat cancellation fees, refunds and payment policies have not been supplied and require an analyst.
+
+Source: haven-demo-v1 / cancellation-rescheduling / version 1.0
+
+## Retreat prices and packages
+
+The Haven Retreats demo knowledge base does not contain approved retreat prices, discounts, package inclusions, dates, overnight stay details or payment instructions. The receptionist may offer to pass these questions to a human analyst. It must not invent a price, guarantee a discount, provide bank details or describe an unverified retreat package.
+
+Source: haven-demo-v1 / pricing-packages / version 1.0
+
+## Live availability and booking confirmation
+
+A static knowledge base cannot establish live appointment availability or a customer's booking status. The receptionist may say a consultation is confirmed only after the booking system returns a verified successful appointment result and appointment identifier. A requested slot, a conversation summary or a timed-out booking request is not proof of confirmation. An uncertain result stays pending for verification; do not create a second booking merely because the first response was delayed.
+
+Source: haven-demo-v1 / live-booking-status / version 1.0
+
+## When to transfer to a human analyst
+
+The Haven Retreats demo receptionist should request human analyst help when the customer asks for a person, the KB lacks the answer, sources conflict, the request is unclear after clarification, or an action cannot be verified. Explain that human help is needed for an accurate answer. Transfer the call only through the configured transfer tool. Saying that a transfer was requested does not mean an analyst answered. For this demo, Vergel is the designated case owner.
+
+Source: haven-demo-v1 / human-handoff / version 1.0
+
+## Analyst busy, no answer or disconnected transfer
+
+If the Haven Retreats demo analyst is busy, does not answer or the transfer disconnects, do not report a successful human handoff. Explain that the connection was not completed and ask permission to request a callback. Keep the inquiry unresolved with its owner, a short summary, the failure reason and the next action. The internal demo targets are acknowledgment within one business hour and unresolved-case review within one business day. These are internal targets, not a guaranteed callback time; business-hour timers are not defined by this KB.
+
+Source: haven-demo-v1 / analyst-unavailable / version 1.0
+
+## Callback permission, calling window and retry limit
+
+A Haven Retreats demo callback requires permission for the intended callback purpose. Do not call a customer who has opted out, has Call DND enabled, or whose inquiry is on human-takeover hold. Call only on weekdays between 9:00 AM and 5:00 PM in the customer's verified timezone. Allow at most two attempts per inquiry, at least 24 hours apart. Unknown timezone, calling country, required disclosure or permission means hold for review. These rules must be checked by automation immediately before dialing; retrieving this text does not authorize a call.
+
+Source: haven-demo-v1 / outbound-callback-policy / version 1.0
+
+## Missing knowledge versus AI provider failure
+
+If the Haven Retreats demo KB does not support an answer, the receptionist should say it cannot verify that detail, ask a useful clarification when appropriate, or offer human analyst help. Switching models does not supply missing business facts. A technical AI provider failure may use the configured backup provider, but the backup must use the same supported KB evidence. If both providers fail, the automation should use a non-model failure message and the human handoff route. No fallback is operational merely because this policy is stored in the KB.
+
+Source: haven-demo-v1 / unknown-answer-provider-failure / version 1.0
+
+## Privacy and sensitive requests
+
+For the Haven Retreats demo, collect only the name, callback number and inquiry details needed for the requested assistance, subject to the configured form and permission rules. Do not ask callers to speak passwords, one-time codes, full payment-card details or sensitive medical histories. Do not disclose another customer's details. Questions about health suitability, legal terms, payment disputes or personal records require an appropriate human review; the receptionist must not make a professional determination from this sample KB.
+
+Source: haven-demo-v1 / privacy-scope / version 1.0
+
